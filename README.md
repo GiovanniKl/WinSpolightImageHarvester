@@ -13,8 +13,8 @@ After this, you need to update paths in the `000gimmeimages.py` and `000sortimag
 - `impath` - Path to the Windows Spotlight folder, usual structure is `C:\Users\<username>\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_<some characters>\LocalState\Assets\` (not present in `000sortimages.py`).
 - `folder` - Folder where to download new images, usual structure is `<path to the base folder of this project>\new\`.
 - `rootf` - Base folder of this project, usual structure is `<path to the base folder of this project>\`.
-- 'rootfl' - Folder for landscape-oriented images, usual structure is `<path to the base folder of this project>\landscape\`.
-- 'rootfp' - Folder for portrait-oriented images, usual structure is `<path to the base folder of this project>\portrait\`.
+- `rootfl` - Folder for landscape-oriented images, usual structure is `<path to the base folder of this project>\landscape\`.
+- `rootfp` - Folder for portrait-oriented images, usual structure is `<path to the base folder of this project>\portrait\`.
 Due to python string handling, use `\\` instead of `\` in the script (applies to all python scripts in this project). All paths must end with a `\`, resp. `\\`.
 
 Then create folders for landscape and portrait images - names must correspond to the ones mentioned in the python scripts.
