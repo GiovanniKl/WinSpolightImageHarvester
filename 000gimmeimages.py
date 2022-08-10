@@ -7,7 +7,7 @@ def main():
     # to them.
     impath = "C:\\Users\\Jan\\AppData\\Local\\Packages\\Microsoft.Windows."+\
              "ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets\\"
-    folder = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\nove\\"
+    folder = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\new\\"
     rootf = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\"
     rootfl = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\landscape\\"  # landscape
     rootfp = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\portrait\\"  # portrait
