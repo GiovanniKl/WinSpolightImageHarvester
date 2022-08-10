@@ -1,0 +1,33 @@
+As of 2022/04/07:
+Search folder
+C:\Users\Jan\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets
+
+copy largest files and rename them to .jpg
+
+example hot to rename files using windows power shell:
+PS C:\Users\Jan> cmd
+Microsoft Windows [Version 10.0.19043.1645]
+(c) Microsoft Corporation. Všechna práva vyhrazena.
+
+C:\Users\Jan>cd Pictures
+
+C:\Users\Jan\Pictures>cd WinSpotlight
+
+C:\Users\Jan\Pictures\WinSpotlight>cd nove
+
+C:\Users\Jan\Pictures\WinSpotlight\nove>ren * *.jpg
+
+C:\Users\Jan\Pictures\WinSpotlight\nove>
+
+
+
+As of 2022/07/07:
+Now all you need to do is run the 000_gimmeimages python script and then copy the images you want to keep to the parent folder. Delete the others (rather shift+delete).
+
+For use in other PCs, you have to change the search folder and save folder accordingly.
+
+
+As of 2022/08/10:
+For acquiring new images run '000gimmeimages.py', new images appear in the folder 'nove'. There, move images that you like to the link folder 'WinSpotlight'. 
+To clean up the 'nove' folder, simply run the 'del_all_images_here.bat' program.
+If you want to sort the images you have in the 'WinSpotlight' folder, run the '000sortimages.py' script.
