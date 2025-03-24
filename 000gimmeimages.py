@@ -3,17 +3,20 @@ from PIL import Image
 
 
 def main():
-    # This program copies images from Windows Spotlight folder and adds .jpg
-    # to them.
+    """Copies images from Windows Spotlight folder and adds .jpg to them.
+    """
     impath = "C:\\Users\\Jan\\AppData\\Local\\Packages\\Microsoft.Windows."+\
              "ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets\\"
     folder = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\new\\"
     rootf = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\"
     rootfl = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\landscape\\"  # landscape
     rootfp = "C:\\Users\\Jan\\Pictures\\WinSpotlight\\portrait\\"  # portrait
+    dupf = "duplicates\\"  # duplicates
     szthshld = 200e3  # [Bytes] SiZe THreSHoLD
     ims = os.listdir(impath)
-    imsr, imsl, imsp = os.listdir(rootf), os.listdir(rootfl), os.listdir(rootfp)
+    imsr = os.listdir(rootf)
+    imsl = os.listdir(rootfl) + os.listdir(rootfl+dupf)
+    imsp = os.listdir(rootfp) + os.listdir(rootfp+dupf)
     for i in ims:
         if os.path.getsize(impath+i) >= szthshld:
             with Image.open(impath+i) as img:

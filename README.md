@@ -1,6 +1,9 @@
 # WinSpolightImageHarvester
 Set of scripts for acquiring images from Windows Spotlight lockscreen backgrounds (Win 10/11).
 
+> [!WARNING]
+> README is not updated since last commit including the `000moveduplicates.py` script! 
+
 ## Prerequisites
 - Operating system Windows 10 or 11 (I did not check for compatibility with other systems).
 - Installed Python 3 (scrips were written for Python 3.7).
